@@ -26,7 +26,10 @@ html {
 
 body {
     box-sizing: border-box;
-    padding: 3.5rem;
+    background-image: url(/img/thd_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
 
     @include respond(tab-port) {
         padding: 0;

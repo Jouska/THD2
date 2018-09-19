@@ -1,29 +1,33 @@
 .header {
     height: 85vh;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary-light, 0.8), 
-        rgba($color-primary-dark, 0.8)), 
-    url(../img/hero-small.jpg);
-    background-size: cover;
-    background-position: top;
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
     position: relative;
+    // background-image: linear-gradient(
+    //     to right bottom,
+    //     rgba($color-primary-light, 0.8), 
+    //     rgba($color-primary-dark, 0.8)), 
+    // url(../img/hero-small.jpg);
+    // background-size: cover;
+    // background-position: top;
+    // position: relative;
 
-    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        height: 95vh;
-    }
+    // @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    //     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    //     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    //     height: 95vh;
+    // }
 
-    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-           only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-           only screen and (min-width: 125em) {
-        background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary-light, 0.8), 
-        rgba($color-primary-dark, 0.8)), 
-    url(../img/hero.jpg);
-    }
+    // @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    //        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    //        only screen and (min-width: 125em) {
+    //     background-image: linear-gradient(
+    //     to right bottom,
+    //     rgba($color-primary-light, 0.8), 
+    //     rgba($color-primary-dark, 0.8)), 
+    // url(../img/hero.jpg);
+    // }
 
     // THIS IS HOW THE 125em MIN-WIDTH WOULD LIKE AS A SEPARATE QUERY (NON-DRY)
     // @media (min-width: 125em) {
@@ -34,15 +38,15 @@
     // url(../img/hero.jpg);
     // }
 
-    @include respond(phone) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    }
+    // @include respond(phone) {
+    //     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    //     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    // }
 
     &__logo-box {
-        position: absolute;
-        top: 4rem;
-        left: 4rem;
+        text-align: center;
+        margin: 5rem auto;
+        width: 70%;
     }
 
     &__logo {

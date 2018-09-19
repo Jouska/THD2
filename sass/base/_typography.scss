@@ -2,22 +2,19 @@
 .heading-primary {
     color: $color-white;
     text-transform: uppercase;
-    backface-visibility: hidden;
     margin-bottom: 6rem;
 
     &--main {
         display: block;
-        font-size: 6rem;
+        font-size: 4rem;
         font-weight: 400;
-        letter-spacing: 3.5rem;
-    
-        animation-name: moveInLeft;
+        color: $color-white;
+        animation-name: moveInBottom;
         animation-duration: 1s;
         animation-timing-function: ease-out;
 
         @include respond(phone) {
-            letter-spacing: 1rem;
-            font-size: 5rem;
+            font-size: 3rem;
         }
     
     }
@@ -36,7 +33,8 @@
 }
 
 body {
-    font-family: "Lato", sans-serif;
+    // font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     /*font-size: 16px;*/
     line-height: 1.7;
@@ -82,4 +80,12 @@ body {
     &:not(:last-child) {
         margin-bottom: 3rem;
     }
+}
+
+.thd-primary-blue {
+    color: $color-secondary-light;
+}
+
+.thd-primary-purple {
+    color: $color-primary;
 }
